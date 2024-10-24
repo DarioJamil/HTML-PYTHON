@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Ejemplo de maquetación</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <p class="logo">Curso IBM</p>
+        <nav>
+          <a href="#somos-Bejob">Quienes Somos</a>
+          <a href="#nuestros-programas">Nuestros Programas</a>
+          <a href="#caracteristicas">Características</a>
+        </nav>
+      </div>
+      <script>
+        //Salida por ventana emergente
+        alert("Esto es una ventana emergente.");
+        //Entrada de datos
+        var edad = prompt("Introduzca edad:");
+        // Salida de datos leyendo desde una
+        variable;
+        alert("La edad introducida es: " + edad);
+        // Salida de datos por consola
+        console.log("Ha terminado el programa");
+        // Salida de datos al BODY de mi
+        página;
+        document.write("<h1>Esto es un H1 puesto desde JavaScript</h1>");
+      </script>
+    </header>
+
+    <section id="hero">
+      <h1>Aprende a Programar <br />con los Mejores</h1>
+      <button>Ingresar!</button>
+    </section>
+    <section id="somos-Bejob">
+      <div class="container">
+        <div class="img-container"></div>
+        <div class="texto">
+          <h2>Somos <span class="color-acento">Woman4IT</span></h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
+            veritatis a autem sed dignissimos commodi, voluptas incidunt
+            voluptatibus cum, quia neque nulla consequatur laborum accusamus,
+            perspiciatis odio nemo minus vel!
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="nuestros-programas">
+      <div class="container">
+        <h2>Nuestros Programas</h2>
+        <div class="programas">
+          <div class="cursos">
+            <h3>Programador Front-end</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
+              vero corporis incidunt saepe qui commodi quasi neque veniam quam,
+              aspernatur est beatae maxime animi sed reiciendis mollitia ducimus
+              veritatis repellendus?
+            </p>
+            <button>+ Info</button>
+          </div>
+          <div class="cursos">
+            <h3>Programador Full-Stack</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
+              vero corporis incidunt saepe qui commodi quasi neque veniam quam,
+              aspernatur est beatae maxime animi sed reiciendis mollitia ducimus
+              veritatis repellendus?
+            </p>
+            <button>+ Info</button>
+          </div>
+          <div class="cursos">
+            <h3>Programador Python</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
+              vero corporis incidunt saepe qui commodi quasi neque veniam quam,
+              aspernatur est beatae maxime animi sed reiciendis mollitia ducimus
+              veritatis repellendus?
+            </p>
+            <button>+ Info</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="caracteristicas">
+      <div class="container">
+        <ul>
+          <li>✔️ 100% online</li>
+          <li>✔️ Flexibilidad de horarios</li>
+          <li>✔️ Soporte 1:1</li>
+          <li>✔️ Asistencia financiera</li>
+        </ul>
+      </div>
+
+      <div class="card" style="width: 400px">
+        <div class="card-header">
+          <h4 class="card-title">Gato Panchi</h4>
+        </div>
+        <div class="card-body">
+          <img
+            src="media/python.jpg"
+            alt="Fotograf´ıa de un gato llamado
+Panchi"
+            width="300"
+            class="mx-auto dblock"
+          />
+        </div>
+        <div class="card-footer">
+          <a href="#" class="btn btn-primary float-end">M´as informaci´on</a>
+        </div>
+      </div>
+    </section>
+    <section>
+      <form name="formulario" id="formulario" method="get" autocomplete="off">
+        Email: <input type="email" name="mail" id="mail" />
+        <input type="submit" value="Aceptar" /><br /><br />
+        Edad;
+        <input type="number" name="edad" id="edad" min="18" max="100" />
+        <input type="submit" value="Aceptar" /><br />
+        Buscar:
+        <input type="search" name="buscar" id="buscar" /><br /><br />
+        URL:
+        <input type="url" name="URL" id="URL" /><br /><br />
+        Edad:
+        <input
+          type="number"
+          name="edad"
+          id="edad"
+          min="0"
+          max="100"
+          step="5"
+          placeholder="Introduce edad"
+        /><br /><br />
+        Rango: <input type="range" min="0" max="100" step="5" /><br /><br />
+        Fecha: <input type="date" name="fecha" id="fecha" /><br /><br />
+        Hora: <input type="time" name="hora" id="hora" required /><br /><br />
+        Código postal:
+        <input
+          pattern="(0-
+9){5}"
+          placeholder="5 dígitos"
+          br
+        /><br />
+        <input type="submit" value="Enviar" /><br /><br />
+      </form>
+    </section>
+    <section id="final">
+      <h2>Listo para programar?</h2>
+      <button>Ingresar!</button>
+    </section>
+    <footer>
+      <div class="container">
+        <p>&copy; Curso 2022</p>
+      </div>
+    </footer>
+  </body>
+</html>

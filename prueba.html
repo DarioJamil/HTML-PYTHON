@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Ejemplo de JavaScript</title>
+  </head>
+  <body>
+    <script>
+      // Declaramos las variables sumando1 y sumando2
+      var sumando1 = 10;
+      var sumando2 = 20;
+
+      var resultado = sumando1 + sumando2;
+      console.log(
+        "El resultado de sumar " +
+          sumando1 +
+          " + " +
+          sumando2 +
+          " es " +
+          resultado
+      );
+
+      // Operador modulo o resto de la división
+      var resto = 46 % 5;
+      console.log("El resto de 46/5 es " + resto);
+
+      // Operador incremento
+      var numeroInicial = 10;
+      let numeroIncrementado = ++numeroInicial;
+      console.log(
+        "El operador incremento sobre numeroInicial daría " + numeroIncrementado
+      );
+
+      // IMPORTANTE: No es lo mismo ++variable que variable++
+      var numero5 = 5;
+      document.write("El número antes del incremento vale " + numero5++);
+      document.write("<br>");
+      document.write("El número después del incremento vale " + numero5);
+      document.write("<br>");
+      document.write("<br>");
+
+      // Ahora al revés
+      let numero6 = 5;
+      document.write("El número antes del incremento vale " + ++numero6);
+      document.write("<br>");
+      document.write("El número después del incremento vale " + numero6);
+
+      var precio = 30000;
+      var dinero = prompt("Introduce cuánto dinero tienes: ");
+      var edad = prompt("Introduce tu edad: ");
+      if (precio < dinero && edad >= 18) {
+        alert("Te puedes comprar el coche");
+      } else if (precio < dinero && edad < 18) {
+        alert("Tienes el dinero pero no la edad");
+      } else if (precio > dinero && edad >= 18) {
+        alert("Tienes la edad pero no el dinero");
+      } else if (precio > dinero && edad < 18) {
+        alert("Ni dinero ni edad");
+      }
+
+      var edad = Number(prompt("Introduce la edad que tienes: "));
+      var imprime = "";
+      switch (edad) {
+        case 18:
+          imprime = "Acabas de cumplir la mayoría de edad";
+          break;
+        case 25:
+          imprime = "Eres un adulto";
+          break;
+        case 50:
+          imprime = "Eres maduro";
+          break;
+        default:
+          imprime = "Otra edad no contemplada";
+          break;
+      }
+      document.write("<br>");
+      document.write(imprime);
+      document.write("<br>");
+
+      for (var i = 0; i < 10; i++) {
+        document.write(i + "<br>");
+      }
+      document.write("Ejecución terminada.");
+      document.write("<br>");
+
+      var meses = [
+        "Enero",
+        "Febrero",
+        "Marzo",
+        "Abril",
+        "Mayo",
+        "Junio",
+        "Julio",
+        "Agosto",
+        "Septiembre",
+        "Octubre",
+        "Noviembre",
+        "Diciembre",
+      ];
+      for (var i = 0; i < meses.length; i++) {
+        document.write(meses[i] + "<br/>");
+      }
+      document.write("<br>");
+
+      var contador = 0;
+      var meses = [
+        "Enero",
+        "Febrero",
+        "Marzo",
+        "Abril",
+        "Mayo",
+        "Junio",
+        "Julio",
+        "Agosto",
+        "Septiembre",
+        "Octubre",
+        "Novienbre",
+        "Diciembre",
+      ];
+
+      while (contador < meses.length) {
+        document.write(meses[contador] + "<br>");
+        contador++;
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <title>Documento sin título</title>
+    <script>
+      var articulos = ["balon", "botas", "camiseta", "pantalon"];
+    </script>
+  </head>
+  <body>
+    <img src="https://picsum.photos/200/300" id="imagen" alt="Imagen aleatoria">
+
+    <script>
+      document.write(
+        "<p>La lisata de articulos original es <strong> " +
+          articulos +
+          "</strong></p > "
+      );
+      document.write(
+        "<p>El primer articulo es <strong> " + articulos[0] + "</strong></p > "
+      );
+      document.write("<P>La longitud delarray es " + articulos.length + "</p>");
+      document.write(
+        "<p>El último articulo es <strong>" +
+          articulos[articulos.length - 1] +
+          "</strong></p>"
+      );
+      articulos.unshift("pelota");
+      articulos.push("canasta");
+      document.write(
+        "<p>Añadimos el artículo con unshift <strong>" +
+          articulos[0] +
+          "</strong></p>"
+      );
+      document.write(
+        "<p>El primer articuloahora es <strong>" +
+          articulos[0] +
+          "</strong></p>"
+      );
+      document.write(
+        "<p>El último articuloahora añadido con push es <strong>" +
+          articulos[articulos.length - 1] +
+          "</strong></p>"
+      );
+      document.write(
+        "<P>La longitud delarray ahora es " + articulos.length + "</p>"
+      );
+      document.write(articulos);
+      articulos.push(prompt("introducenuevo articulo"));
+      document.write("<br>");
+      document.write(
+        "<p>El último articuloahora añadido con alert y push es <strong>" +
+          articulos[articulos.length - 1] +
+          "</strong></p>"
+      );
+      document.write(
+        "<P>La longitud delarray ahora es " + articulos.length + "</p>"
+      );
+      document.write(articulos);
+      // forEach
+      document.write("<ul>");
+      var nombres = ["Angel", "Sara", "Manolo", "Ana"];
+      nombres.forEach((elemento) => {
+        document.write("<li>" + elemento + "</li>");
+      });
+      document.write("</ul>");
+
+      // Opcionalmente la función foreach puede recibir más
+      // parámetros.
+      // Un segundo parámetro puede ser el índice.
+
+      nombres.forEach((elemento, index) => {
+        document.write("<li>" + index + " - " + elemento + "</li>");
+      });
+
+      //   Recorrer arrays con for in
+      document.write("<br>");
+      for (let nombre in nombres) {
+        document.write("<li>" + nombres[nombre] + "</li>");
+      }
+      var nombre1 = "Angel";
+      var busqueda = nombres.find(function (nombre) {
+        return nombre == nombre1;
+      });
+      document.write(busqueda);
+
+      //   manera simplificada
+      document.write("<br>");
+      var nombre1 = "Sara";
+      var busqueda = nombres.find((nombre) => nombre == nombre1);
+      document.write(busqueda + " simplificado");
+
+      var peliculas = ["Batman", "Cars", "It"];
+      var categoria = ["Acción", "infantil", "Terror"];
+      var cine = [peliculas, categoria];
+      //   console.log(cine);
+      document.write("<br>");
+      document.write(cine);
+    //   console.log(cine);
+      console.log(cine[0][0]);
+
+      function ejecutaEventoOnclick(){
+            var x = 30;
+            window.alert(x);
+            window.document.bgColor = 'red';
+        } 
+
+      var miImagen =
+        document.getElementById('imagen');
+        miImagen.addEventListener('mouseover', function() {alert('Has pasado el ratón encima dela imagen')
+})
+    </script>
+
+
+
+
+
+<INPUT type="button" value="pulsar"
+onclick="ejecutaEventoOnclick()"> </INPUT>
+
+  </body>
+</html>
